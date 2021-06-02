@@ -48,6 +48,21 @@
         height: 24px;
         display: flex;
     }
+    &__list {
+        margin-right: 300px;
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        margin-left: 35px;
+    }
+    &__val {
+        @include font('Helvetica Now Display', normal, 400, 16px, 24px, #ffffff);
+        text-decoration: none;
+    }
+    &__val:hover {
+        color: #18E8A4;
+    }
 }
 
 .burger {
@@ -106,6 +121,72 @@
             width: 172px;
             height: 40px;
             margin: 10px 0 0 55px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        padding-top: 30px;
+        padding-bottom: 195px;
+        background: #020213;
+        &__title {
+            width: 430px;
+            margin-top: 0;
+            font-size: 56px;
+            line-height: 62px;
+        }
+        &__description {
+            margin-top: 0;
+            margin-left: 50px;
+            font-size: 24px;
+            line-height: 37px;
+        }
+        &__inner:nth-child(2) {
+            margin-top: 95px;
+            display: flex;
+            justify-content: inherit;
+            align-items: center;
+        }
+        &__logo {
+            width: 145px;
+            height: 40px;
+        }
+    }
+    .nav {
+        &__mobile {
+            display: none;
+        }
+        &__desk {
+            display: flex;
+        }
+        &__link {
+            width: 156px;
+            height: 48px;
+            @include font('Helvetica Now Display', normal, 700, 16px, 23.5px, #ffffff);
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(20, 20, 26, 0.3);
+            border: 2px solid #18E8A4;
+            box-sizing: border-box;
+            border-radius: 383px;
+        }
+    }
+    .roles {
+        margin-top: 100px;
+        &__inner {
+            height: 676px;
+            background: linear-gradient(180deg, rgba(2, 2, 19, 0) 0%, #020213 100%);
+        }
+        &__link {
+            width: 378px;
+            height: 212px;
+            margin: 0;
+            font-size: 28px;
+            line-height: 33.6px;
+            opacity: 0.9;
         }
     }
 }
