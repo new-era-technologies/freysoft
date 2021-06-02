@@ -1,0 +1,32 @@
+@import "base/reset";
+@import "base/fonts";
+@import "utils/mixins";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+.main-wrapper {
+    background: #ffffff;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        width: 1920px;
+    }
+}
