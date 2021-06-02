@@ -1,0 +1,86 @@
+.header {
+    background: #020213;
+    &__title {
+        margin-top: 50px;
+        @include font('Helvetica Now Display', normal, 900, 40px, 44.4px, #ffffff);
+        letter-spacing: -1px;
+        text-align: left;
+    }
+    &__title::after {
+        content: '!';
+        color: #18E8A4;
+    }
+    &__description {
+        margin-top: 16px;
+        @include font('Helvetica Now Display', normal, 400, 16px, 24.8px, #ffffff);
+        text-align: left;
+    }
+    &__inner {
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__inner:nth-child(2) {
+        padding: 0;
+        display: block;
+    }
+    &__logo {
+        width: 137px;
+        height: 38px;
+        display: flex;
+    }
+}
+
+.nav {
+    transition: .2s all;
+    &__desk,
+    &__mobile {
+        display: flex;
+        align-items: center;
+    }
+    &__desk {
+        display: none;
+    }
+    &__link {
+        width: 24px;
+        height: 24px;
+        display: flex;
+    }
+}
+
+.burger {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    &__line {
+        width: 16px;
+        height: 2px;
+        background: #FFFFFF;
+    }
+}
+
+.roles {
+    margin-top: 40px;
+    &__inner {
+        height: 200px;
+        background: linear-gradient(180deg, rgba(2, 2, 19, 0) 0%, #020213 100%);
+    }
+    &__link {
+        width: 172px;
+        height: 40px;
+        margin: 40px auto 0;
+        @include font('Helvetica Now Display', normal, 800, 13px, 15.6px, #020213);
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #18E8A4;
+        border-radius: 10px;
+    }
+}
